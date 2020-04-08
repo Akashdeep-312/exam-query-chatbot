@@ -1,6 +1,5 @@
-# exam-query-chatbot
-#chatbot using nltk python library
-from nltk.chat.util import Chat,reflections //prefer to use python 3.6.7 or higher
+from nltk.chat.util import Chat,reflections
+
 pairs=[
     ['my name is (.*)',['hi! %1']],
     ['(hi|holla|heya|hey|hello)',['hey there!how may i help you?']],
@@ -21,24 +20,26 @@ pairs=[
     ['(.*)  too see my answer sheets',[' regarding scrutiny of sheets -respective authorities will inform you although its for written sheets not mcq based.']],
     ['no',['thank you,had a great conversation.have a good day ahead!']],
     ['(.*) thank you',['thank you,had a great conversation.have a good day ahead!']],
-    #giving a general query convo. can be eddited as per requirements.
 ]
-reflections// will convert to opposite denotions
-#creating as per requirement reflections
+def chatty():
+        print("Hi, I'm Chatty and I chat alot ;)\nPlease type lowercase English language to start a conversation. Type quit to leave ") #default message at the start
+    #giving a general query convo. can be eddited as per requirements.
+    
+
+
+
+
+reflections
+
 my_dummy_reflections={
     'go':'gone',
     'hello':'hey there'
 }
-#to fetch and execute above functions
+
 chat=Chat(pairs,my_dummy_reflections)
 #chat._substitute(' go hello')
 chat.converse()
-# here's your bot ready
+if __name__ == "__main__":
+    chatty()
 
-
-
-
-
-
-
-
+//https://github.com/rudra2027/exam-query-chatbot//
